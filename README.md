@@ -14,8 +14,8 @@ The e-commerce back end code is the server-side component of an online store tha
 
 This application contains the back end requirements for an e-commerce site: Using a working Express.js API and configuring it to use Sequelize to interact with a MySQL database.
   ## Demo
-  
 
+https://user-images.githubusercontent.com/61386052/232877544-d754ec5a-308f-42b9-b044-a1f4a4d9f13b.mp4
 
 
   ### Prerequisites
