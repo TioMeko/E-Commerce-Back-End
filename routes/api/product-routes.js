@@ -23,7 +23,6 @@ router.get('/:id', async (req, res) => {
     const productData = await Product.findByPk(req.params.id, {
       include: [{ model: Tag, through: ProductTag, as: 'tags' }, { model: Category }],
     });
-    //If no id was found
     if (!productData) {
       res.status(404).json({ message: 'No product was found with this id!' });
       return;
@@ -89,7 +88,6 @@ router.put('/:id', (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
       res.status(400).json(err);
     });
 });
